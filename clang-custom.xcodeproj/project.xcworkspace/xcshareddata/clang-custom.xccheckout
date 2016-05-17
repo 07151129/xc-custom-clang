@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>28C6ED6E-D571-4048-9949-DB1434565EB8</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>0F0DD612E6EDB188EA4D7B3AF9ED045BF5AFF6C0</key>
+		<string>https://github.com/rodionovd/rd_route.git</string>
+	</dict>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>0F0DD612E6EDB188EA4D7B3AF9ED045BF5AFF6C0</key>
+		<string>rd_route/</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/rodionovd/rd_route.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>0F0DD612E6EDB188EA4D7B3AF9ED045BF5AFF6C0</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>0F0DD612E6EDB188EA4D7B3AF9ED045BF5AFF6C0</string>
+			<key>IDESourceControlWCCName</key>
+			<string>rd_route</string>
+		</dict>
+	</array>
+</dict>
+</plist>
