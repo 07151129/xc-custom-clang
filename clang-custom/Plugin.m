@@ -4,8 +4,10 @@
 #include <objc/runtime.h>
 #include <mach/kern_return.h>
 #include <dlfcn.h>
+#include <mach-o/dyld.h>
 
 #include "rd_route.h"
+
 
 __attribute__((unused))
 char* c = "Built with "__clang_version__; // Should match custom clang version after preprocessing or building
@@ -41,7 +43,7 @@ void* libclangHandle = nil;
 /* FIXME: Patching GOT is probably a better idea */
 /* FIXME: Instead of dlopen'ing libclang, link it so that we don't waste time on dlsym */
 static kern_return_t replaceLib() {
-	libclangHandle = dlopen(CLANG_PREFIX"lib/libclang.dylib", RTLD_LAZY | RTLD_LOCAL);
+	libclangHandle = dlopen(CLANG_PREFIX"/lib/libclang.dylib", RTLD_LAZY | RTLD_LOCAL);
 	
 	if (!libclangHandle) {
 		fprintf(stderr, "Failed to dlopen libclang, err: %s\n", dlerror());
@@ -70,7 +72,8 @@ static kern_return_t replaceLib() {
 +(void)pluginDidLoad:(NSBundle *)plugin {
 	NSString* loader = [[NSBundle mainBundle] bundleIdentifier];
 	if (![loader isEqualToString:@"com.apple.dt.Xcode"] &&
-		![loader isEqualToString:@"com.apple.dt.xcodebuild"])
+		![loader isEqualToString:@"com.apple.dt.xcodebuild"] &&
+		![[[NSString stringWithUTF8String:_dyld_get_image_name(0)] lastPathComponent] isEqualToString:@"xcodebuild"]) /* Xcodebuild doesn't always have bundle id? */
 		return;
 	sharedPlugin = [[self alloc] initWithBundle:plugin];
 }

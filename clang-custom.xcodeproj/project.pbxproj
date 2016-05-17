@@ -27,6 +27,7 @@
 
 /* Begin PBXFileReference section */
 		2F27B2691CE8B02B0063E8F9 /* libclang_imports.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libclang_imports.h; sourceTree = "<group>"; };
+		2F63F3611CEB775F0048A9AA /* Clang custom.xcspec.templ */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Clang custom.xcspec.templ"; sourceTree = "<group>"; };
 		2FB704C51CE76D0E003EACEF /* clang-custom.xcplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "clang-custom.xcplugin"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FB704C91CE76D0E003EACEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2FB704CF1CE76DAE003EACEF /* Clang custom.xcspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xcspec; path = "Clang custom.xcspec"; sourceTree = "<group>"; };
@@ -83,6 +84,7 @@
 		2FB704C81CE76D0E003EACEF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2F63F3611CEB775F0048A9AA /* Clang custom.xcspec.templ */,
 				2FB704CF1CE76DAE003EACEF /* Clang custom.xcspec */,
 				2FB704D01CE76DAE003EACEF /* English.lproj */,
 				2FB704C91CE76D0E003EACEF /* Info.plist */,
@@ -194,7 +196,6 @@
 			files = (
 			);
 			inputPaths = (
-				"$(SRCROOT)/myfile",
 			);
 			outputPaths = (
 			);
