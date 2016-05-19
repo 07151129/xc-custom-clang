@@ -21,3 +21,6 @@ clang version.
 
 - Libraries like `libarc_lite` have to be copied to `lib` directory in clang prefix from Xcode toolchain.
 - `libclang` replacement might not work well with your Xcode version. 
+
+#### License
+MIT, except for Apple-copyrighted components.

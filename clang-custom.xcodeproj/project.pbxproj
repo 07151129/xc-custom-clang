@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F18CACB1CEE626B0059C9A2 /* Custom Clang.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2F18CAC91CEE626B0059C9A2 /* Custom Clang.strings */; };
 		2FB704D31CE76DAE003EACEF /* Clang custom.xcspec in Resources */ = {isa = PBXBuildFile; fileRef = 2FB704CF1CE76DAE003EACEF /* Clang custom.xcspec */; };
-		2FB704D41CE76DAE003EACEF /* Clang custom.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2FB704D11CE76DAE003EACEF /* Clang custom.strings */; };
 		2FB704D71CE76DFC003EACEF /* Plugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FB704D61CE76DFC003EACEF /* Plugin.m */; };
 		2FB704E51CE76E3A003EACEF /* rd_route.c in Sources */ = {isa = PBXBuildFile; fileRef = 2FB704DC1CE76E3A003EACEF /* rd_route.c */; };
 /* End PBXBuildFile section */
@@ -26,11 +26,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2F18CACA1CEE626B0059C9A2 /* English */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = English; path = "Custom Clang.strings"; sourceTree = "<group>"; };
 		2F63F3611CEB775F0048A9AA /* Clang custom.xcspec.templ */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Clang custom.xcspec.templ"; sourceTree = "<group>"; };
 		2FB704C51CE76D0E003EACEF /* clang-custom.xcplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "clang-custom.xcplugin"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FB704C91CE76D0E003EACEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2FB704CF1CE76DAE003EACEF /* Clang custom.xcspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xcspec; path = "Clang custom.xcspec"; sourceTree = "<group>"; };
-		2FB704D21CE76DAE003EACEF /* English */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = English; path = "Clang custom.strings"; sourceTree = "<group>"; };
 		2FB704D61CE76DFC003EACEF /* Plugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Plugin.m; sourceTree = "<group>"; };
 		2FB704D91CE76E3A003EACEF /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		2FB704DA1CE76E3A003EACEF /* .travis.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
@@ -93,7 +93,7 @@
 		2FB704D01CE76DAE003EACEF /* English.lproj */ = {
 			isa = PBXGroup;
 			children = (
-				2FB704D11CE76DAE003EACEF /* Clang custom.strings */,
+				2F18CAC91CEE626B0059C9A2 /* Custom Clang.strings */,
 			);
 			path = English.lproj;
 			sourceTree = "<group>";
@@ -180,7 +180,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2FB704D41CE76DAE003EACEF /* Clang custom.strings in Resources */,
+				2F18CACB1CEE626B0059C9A2 /* Custom Clang.strings in Resources */,
 				2FB704D31CE76DAE003EACEF /* Clang custom.xcspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -216,12 +216,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		2FB704D11CE76DAE003EACEF /* Clang custom.strings */ = {
+		2F18CAC91CEE626B0059C9A2 /* Custom Clang.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				2FB704D21CE76DAE003EACEF /* English */,
+				2F18CACA1CEE626B0059C9A2 /* English */,
 			);
-			name = "Clang custom.strings";
+			name = "Custom Clang.strings";
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
