@@ -26,7 +26,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		2F27B2691CE8B02B0063E8F9 /* libclang_imports.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libclang_imports.h; sourceTree = "<group>"; };
 		2F63F3611CEB775F0048A9AA /* Clang custom.xcspec.templ */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Clang custom.xcspec.templ"; sourceTree = "<group>"; };
 		2FB704C51CE76D0E003EACEF /* clang-custom.xcplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "clang-custom.xcplugin"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FB704C91CE76D0E003EACEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -76,7 +75,6 @@
 			children = (
 				2FB704C81CE76D0E003EACEF /* Supporting Files */,
 				2FB704D61CE76DFC003EACEF /* Plugin.m */,
-				2F27B2691CE8B02B0063E8F9 /* libclang_imports.h */,
 			);
 			path = "clang-custom";
 			sourceTree = "<group>";
@@ -309,13 +307,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_LINK_WITH_DYNAMIC_LIBRARIES = YES;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				GENERATE_MASTER_OBJECT_FILE = NO;
 				INFOPLIST_FILE = "clang-custom/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
-				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
+				LD_NO_PIE = NO;
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks /usr/local/lib";
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/lib,
+					"$(inherited)",
+				);
+				OTHER_CFLAGS = "";
+				PRELINK_LIBS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = xcplugin;
@@ -326,13 +331,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_LINK_WITH_DYNAMIC_LIBRARIES = YES;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				GENERATE_MASTER_OBJECT_FILE = NO;
 				INFOPLIST_FILE = "clang-custom/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
-				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
+				LD_NO_PIE = NO;
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks /usr/local/lib";
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/lib,
+					"$(inherited)",
+				);
+				OTHER_CFLAGS = "";
+				PRELINK_LIBS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = xcplugin;
