@@ -6,31 +6,47 @@
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>28C6ED6E-D571-4048-9949-DB1434565EB8</string>
+	<key>IDESourceControlProjectName</key>
+	<string>clang-custom</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>0F0DD612E6EDB188EA4D7B3AF9ED045BF5AFF6C0</key>
 		<string>https://github.com/rodionovd/rd_route.git</string>
+		<key>45CF57B00F8775E21F5BD3C22733912586196524</key>
+		<string>https://github.com/07151129/xc-custom-clang.git</string>
 	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>clang-custom.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>0F0DD612E6EDB188EA4D7B3AF9ED045BF5AFF6C0</key>
-		<string>rd_route/</string>
+		<string>../..rd_route</string>
+		<key>45CF57B00F8775E21F5BD3C22733912586196524</key>
+		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/rodionovd/rd_route.git</string>
+	<string>https://github.com/07151129/xc-custom-clang.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>0F0DD612E6EDB188EA4D7B3AF9ED045BF5AFF6C0</string>
+	<string>45CF57B00F8775E21F5BD3C22733912586196524</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>45CF57B00F8775E21F5BD3C22733912586196524</string>
+			<key>IDESourceControlWCCName</key>
+			<string>clang-custom</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
 			<string>0F0DD612E6EDB188EA4D7B3AF9ED045BF5AFF6C0</string>
 			<key>IDESourceControlWCCName</key>
-			<string>rd_route</string>
+			<string>clang-customrd_route</string>
 		</dict>
 	</array>
 </dict>
